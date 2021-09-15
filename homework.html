@@ -22,13 +22,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Spotifour</title>
-    <style>
-      .col{
-        background: rgb(2,0,36);
-        background: linear-gradient(0deg, rgba(2,0,36,1) 43%, #9C367F 100%, rgba(0,212,255,0) 100%)!important;
-        font-family: Montserrat;
-      }
-    </style>
   </head>
   <body>
     
@@ -51,7 +44,7 @@
               <div class="d-flex flex-column navbar_main_section"> 
                 <div class="d-flex align-items-center sidebar_home active mr-2">
                   <i class="bi bi-house-door left_nav_icons mr-2"></i>
-                  <p class="m-0 ">Home</p>
+                  <p class="m-0">Home</p>
                 </div>
                 <div class="d-flex align-items-center sidebar_search">
                   <i class="bi bi-search left_nav_icons mr-2"></i>
@@ -101,7 +94,7 @@
                 <div class="d-flex"><p class="text_clamp_1">Jazz Classics Blue Note Edition</p></div>
               </div>
             </div>
-            <div class="d-flex p download_app_section mt-2 mb-2">
+            <div class="d-flex p download_app_section mt-3 mb-2">
               <i class="bi bi-arrow-down-circle mr-2 "></i>
               <p class="m-0">Install App</p>
             </div>
@@ -115,7 +108,7 @@
 
       <div class="col">
       
-          <div class="row">
+          <div class="row pr-3">
                 <!-- TOP NAVBAR -->
                 <div class="col-12 sticky-top">
                   <div class="d-flex justify-content-between mt-3">
@@ -135,9 +128,9 @@
                       <div class="dropdown-toggle pr-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           John Döner 'Alle Gemuse' Kebab
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" onclick=location.href="./index.html" >Homepage</a>
+                              <a class="dropdown-item" onclick=location.href="./album_page.html" >Album Page</a>
                               <a class="dropdown-item" onclick=location.href="./artist_page.html">Artist Page</a>
-                              <a class="dropdown-item" onclick=location.href="./album_page.html" >Log-in Page</a>
+                              <a class="dropdown-item" onclick=location.href="./loginpage/index.html" >Log-in</a>
                               <a class="dropdown-item" onclick=location.href="./404-custom.html">404</a>
                             </div>
                         </div>
@@ -145,136 +138,67 @@
                   </div>
                 </div>
                 <!-- END OF TOP NAVBAR -->
-              <div class="col-12 mt-5 text-white">
-              <div class="d-flex" >
-                <img src="https://images-na.ssl-images-amazon.com/images/I/71WVq7VqUkL._SL1260_.jpg" class="album_image" width="200" height="200" alt="">
-                <div  class="ml-3 align-self-end">
-                  <h6 class="album_title">Album</h6>
-                  <h2 class="album_title "><b>Bohemian Rhapsody(The Original Soundtrack)</b><p id="demo"></p></h2>
-                  <div class="d-flex">
-                    <img src="./assets/small_profile_picture.jpg" class="profile_picture" width="25" height="25" alt="">
-                    <h6 class="ml-1 mr-1 album_title">Queen</h6>
-                    <p class="album_title"><span class="mr-1 ml-1">&sdot;</span>2019<span class="mr-1 ml-1 ">&sdot;</span>22 songs, 1hr 19min</p>
+                <!-- GOOD MORNING SECTION -->
+                <div class="col-12 mt-3">
+                  <div>
+                    <h3>Good Morning</h3>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 pl-0 song_container_background mt-4">
-              <div class="col-12 mt-5">
-                <div class="text-white h3 d-flex align-items-center" >
-                  <img src="./assets/spotify_play_btn.jpg" class="profile_picture play_logo" width="50" height="50" alt="">
-                  <i class="bi bi-heart ml-3 album_icons " ></i>
-                  <i class="bi bi-three-dots ml-3 album_icons"></i>
-                  <button class="btn-info ml-5" style="font-size: small;" onclick="toggleMode()">Toggle mode</button>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="text-white d-flex justify-content-between" >
-                  <p>#</p>
-                  <p class="song_aligment">Title</p>
-                  <div id="hourglass" class="fa"></div>
-                </div>
-                <hr>
-              </div>
-              <div class="col-12 song_container" >
-                <div class="d-flex text-white justify-content-between">
-                  <p>1</p>
-                  <div class="song_aligment">
-                    <p class="mb-0 songs">20th Century Fox Hanfare <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i></p>
-                      <p class="songs">Queen </p>  
+                  <div class="d-inline-flex good_morning_container">
+                      <div class="d-flex align-items-center good_morning_section">
+                        <img src="https://cdn.crello.com/downloads/cdec5ddb-316f-478a-a700-dac9de3c0382_450.jpeg" width="70" height="70" alt="">
+                        <p class="text_clamp_1 my-0">Burning Jazz-Rap Fusion</p>
+                      </div>
+                      
+                  </div>
+                  </div>
+                  <!-- END OF GOOD MORNING SECTION -->
+    
+                  <!-- RECENTLY PLAYED SECTION -->
+                  <div class="col-12">
+                    <!-- Recently played-->
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h3>Recently played</h3>
+                    <h6>SEE ALL</h6>
+                  </div>
+                  <div class="w-100 recently-played-container">
+    
+                    <!-- One card-->
+                    <div class="spotify-card d-flex flex-column" >
+                        
                     </div>
-                  <p>0:25</p>                
-                </div>
-                <div class="d-flex text-white justify-content-between">
-                  <p>2</p>
-                  <div class="song_aligment">
-                    <p class="mb-0 songs">Somebody to love <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i></p>
-                      <p class="songs">Queen</p>
+                    <!-- One card end -->
+    
+                  </div>
+    
+                  <!-- SHOWS TO TRY SECTION-->
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <div>
+                      <h3 class="my-0">Shows to try</h3>
+                      <p class="my-0">Podcasts we think you'll get hooked on.</p>
                     </div>
-                  <p>04:55</p>                
-                </div>
-                <div class="d-flex text-white justify-content-between">
-                  <p>3</p>
-                  <div class="song_aligment">
-                    <p class="mb-0 songs">Doing All Right - ...Revisited <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i></p>
-                      <p class="songs">Queen</p>
+                    <h6>SEE ALL</h6>
+                  </div>
+                  <div class="w-100 mt-3 shows-to-try-container">
+                    <!-- One card-->
+                    <div class="spotify-card d-flex flex-column" >
+                      <div class="p-2">
+                        <div>
+                          <img src="https://megaphone.imgix.net/podcasts/86fe6492-bb2a-11e7-873d-cf56b25e8a62/image/3000x3000_PodcastArt_SlowBurnS5.jpg?w=175&h=175" alt="" class="podcast-img">
+                        </div>
+                        <div class="mt-2">
+                          <h6 class="text_clamp_1">Slow Burn: The Road to the Iraq War</h6>
+                          <p class="text_clamp_2">Eighteen months after 9/11, the United States invaded a country that had nothing to do with the attacks. Who’s to blame? And was there any way to stop it?</p>
+                        </div>
+                      </div>
                     </div>
-                  <p>03:16</p>                
+                    <!-- One card end-->
+                    
                 </div>
-                <div class="d-flex text-white justify-content-between">
-                  <p>5</p>
-                  <div class="song_aligment">
-                    <p class="mb-0 songs">Killer Queen <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i></p>
-                      <p class="songs">Queen</p>
-                    </div>
-                  <p>02:59</p>                
+                <!-- SHOWS TO TRY SECTION END-->
                 </div>
-                <div class="d-flex text-white justify-content-between">
-                  <p>6</p>
-                  <div class="song_aligment">
-                    <p class="mb-0 songs">Fat Bottomed Girls - Live in Paris <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i></p>
-                      <p class="songs">Queen</p>
-                    </div>
-                  <p>04:37</p>                
-                </div>
-                <div class="d-flex text-white justify-content-between">
-                  <p>7</p>
-                  <div class="song_aligment">
-                    <p class="mb-0 songs">Bohemiam Rhapsody <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i></p>
-                      <p class="songs">Queen</p>
-                    </div>
-                  <p>05:54</p>                
-                </div>
-                <div class="d-flex text-white justify-content-between">
-                  <p>8</p>
-                  <div class="song_aligment">
-                    <p class="mb-0 songs">Now I'm Here - Live at The Hammersmith Odeon <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i></p>
-                      <p class="songs">Queen</p>
-                    </div>
-                  <p>04:25</p>                
-                </div>
-                <div class="d-flex text-white" style="justify-content: space-between;;">
-                  <p>9</p>
-                  <div class="song_aligment">
-                    <p class="mb-0 songs">Crazy Little Thing Called Love <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i></p>
-                      <p class="songs">Queen</p>
-                    </div>
-                  <p>02:43</p>                
-                </div>
-                <div class="d-flex text-white" style="justify-content: space-between;;">
-                  <p>10</p>
-                  <div class="song_aligment">
-                    <p class="mb-0 songs">Crazy Little Thing Called Love II <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i></p>
-                      <p class="songs">Queen</p>
-                    </div>
-                  <p>03:43</p>                
-                </div>
-                <div class="d-flex text-white" style="justify-content: space-between;;">
-                  <p>11</p>
-                  <div class="song_aligment">
-                    <p class="mb-0 songs">Crazy Little Thing Called Love III <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i></p>
-                      <p class="songs">Queen</p>
-                    </div>
-                  <p>03:43</p>                
-                </div>
-                <div class="d-flex text-white" style="justify-content: space-between;;">
-                  <p>12</p>
-                  <div class="song_aligment">
-                    <p class="mb-0 songs">Crazy Little Thing Called Love IV <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i></p>
-                      <p class="songs">Queen</p>
-                    </div>
-                  <p>03:43</p>                
-                </div>
-              </div>
-            </div>
           </div>
         </div>
-      </div>
-    </div>
-          </div>
-      </div>
-    </div>
-    <!-- MAIN SECTION END -->
+      <!-- MAIN SECTION END -->
       </div>
     </div>
 
@@ -331,6 +255,8 @@
                 <i class="bi bi-volume-down"></i>
             
                 <i class="bi bi-volume-mute"></i> --->
+               
+       
               <i class="bi bi-music-note-list"></i>         
               <i class="bi bi-speaker"></i> 
               <i class="bi bi-volume-up"></i>
@@ -350,6 +276,7 @@
             </div>
           </div>
         </div>
+
         <button class="open-button" onclick="openForm()"><span>Chat</span></button>
 
         <div class="chat-popup" id="myForm">
@@ -407,6 +334,7 @@
             <button type="button" class="btn cancel" onclick="closeForm()"><i class="bi bi-x-square"></i></button>
         </form>
         </div>
+
                   <!---chat box functions-->
                   <script>
                   function openForm() {
@@ -456,23 +384,113 @@
                   document.querySelector("div.container .chat-log-contain").appendChild(newDivRow)
                   document.getElementById("textMessageBox").value = ""
                           }
-          
                   </script>
                     <!---chat box functions-->
+                <script>
+
+                    const loadMusicEminem = () => {
+
+                        fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q=eminem", {
+                            "method": "GET",
+                            "headers": {
+                                "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
+                                "x-rapidapi-key": "b8db0616e4msh5fccb3937abd88fp1a9dbbjsn785a91343117"
+                            }
+                        })
+                        .then(response => 
+                            response.json()
+                        )
+                        .then(body => {
+                            console.log(body.data)
+                             
+                            const row = document.querySelector(".spotify-card")
+                            /* console.log(row) */
+
+                            for (let i = 0; i < 10; i++) {
+                                console.log(body.data[i])
+                                const obj = body.data[i]
+                                console.log(obj)
+                                const col = document.createElement("div")
+
+                                col.innerHTML = `
+                                <div class="p-2">
+                                    <div>
+                                    <img src="${obj.album.cover_medium}" alt="">
+                                    </div>
+                                    <div class="mt-2">
+                                    <h6 class="text_clamp_1">${obj.title_short}</h6>
+                                    <p class="text_clamp_2">${obj.artist.name}</p>
+                                    </div>
+                                </div>
+                                `
+
+                                row.appendChild(col)
+                            }
+
+                            
+                        })
+                        .catch(err => {
+                            console.error(err);
+                        });
+
+                    }
+                    loadMusicEminem()
+
+                    const loadMusicMetalica = () => {
+
+                        fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q=metalica", {
+                                "method": "GET",
+                                "headers": {
+                                    "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
+                                    "x-rapidapi-key": "b8db0616e4msh5fccb3937abd88fp1a9dbbjsn785a91343117"
+                                }
+                    })
+                    .then(response => 
+                        response.json()
+                    )
+                    .then(body => {
+                        console.log(body.data)
+                        
+
+                        
+                    })
+                    .catch(err => {
+                        console.error(err);
+                    });
+
+                    }
+                    loadMusicMetalica()
+
+
+                    const loadMusicBehemoth = () => {
+
+                    fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q=behemoth", {
+                            "method": "GET",
+                            "headers": {
+                                "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
+                                "x-rapidapi-key": "b8db0616e4msh5fccb3937abd88fp1a9dbbjsn785a91343117"
+                            }
+                    })
+                    .then(response => 
+                    response.json()
+                    )
+                    .then(body => {
+                    console.log(body.data)
 
 
 
+                    })
+                    .catch(err => {
+                    console.error(err);
+                    });
+
+                    }
+                    loadMusicBehemoth()
+
+                </script>
 
 
 
-
-
-
-
-
-
-
-    
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script
@@ -485,69 +503,5 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
-
-    <script>
-      /* ------------------------------ */
-      function myFunction(x) {
-         x.classList.toggle("fa-thumbs-down");
-      }
-      /* ------------------------------ */
-
-      function hourglass() {
-      var a;
-      a = document.getElementById("hourglass");
-      a.innerHTML = "&#xf251;";
-      setTimeout(function () {
-          a.innerHTML = "&#xf252;";
-        }, 1000);
-      setTimeout(function () {
-          a.innerHTML = "&#xf253;";
-        }, 2000);
-        }
-        hourglass();
-        setInterval(hourglass, 3000);
-      /* ------------------------------ */
-
-
-        // Set the date we're counting down to
-        var countDownDate = new Date("September 10, 2021 18:00:00").getTime();
-
-        // Update the count down every 1 second
-        var x = setInterval(function() {
-
-          // Get today's date and time
-          var now = new Date().getTime();
-
-          // Find the distance between now and the count down date
-          var distance = countDownDate - now;
-
-          // Time calculations for days, hours, minutes and seconds
-          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-          // Display the result in the element with id="demo"
-          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-          + minutes + "m " + seconds + "s ";
-
-          // If the count down is finished, write some text
-          if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("demo").innerHTML = "EXPIRED";
-          }
-        }, 1000);
-
-      /* ------------------------------ */
-
-      function toggleMode() {
-       let element = document.querySelector(".song_container_background")
-       element.classList.toggle("dark-mode")
-      }
-
-      /* ------------------------------ */
-
-
-    </script>
   </body>
 </html>
